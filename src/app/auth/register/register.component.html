@@ -1,0 +1,87 @@
+<p>register works!</p>
+<h1>Register</h1>
+<section class="">
+  <!--<h1> Final Year Student Profile</h1>-->
+  
+  <div class="row g-3">
+      <div class="col-md-3">
+          <label for="inputfirnm" class="form-check-label">First Name</label>
+        <input type="text" class="form-control"  aria-label="First name">
+      </div>
+      <div class="col-md-3">
+          <label for="inputlstnm"class="form-check-label">Last Name</label>
+        <input type="text" class="form-control"  aria-label="Last name">
+      </div>
+    </div>
+    <br>
+    <form class="row g-3">
+      <div class="col-md-3">
+        <label for="inputEmail4" class="form-label">Email</label>
+        <input type="email" class="form-control" id="inputEmail4">
+      </div>
+      <br>
+      <div class="col-md-3">
+          <label for="inputphno4" class="form-label">Phone No</label>
+          <input type="number" class="form-control" id="inputphno4">
+        </div>
+        <div class="row g-3">
+        <div class="col-md-3">
+          <label for="inputdob" class="form-label">Date of Birth</label>
+          <input type="date" class="form-control" id="inputdob">
+        </div>
+        <div class="col-md-3">
+          <label for="inputbldgp" class="form-label">Blood Group</label>
+          <input type="text" class="form-control" id="inputbldgp">
+        </div>
+      </div>
+
+      <div class="row g-3">
+      <div class="col-md-3">
+        <label for="inputAddress" class="form-label">Permanent Address</label>
+        <textarea  class="form-control" id="inputAddress" cols="3" rows="2"></textarea> 
+      </div>
+      <br>
+      <div class="col-md-3">
+        <label for="inputAddress2" class="form-label"> Current Address</label>
+        <textarea  class="form-control" id="inputAddress2" cols="3" rows="2"></textarea>   
+      </div>
+  </div>
+  
+      <div class="row g-3">  
+      <div class="col-md-3">
+        <label for="inputregno" class="form-label">Register Number</label>
+        <input type="number" class="form-control" id="inputregno">
+      </div>
+      <div class="col-md-3">
+        <label for="inputState" class="form-label">State</label>
+          <select id="ddl"  class="form-select" onchange="configureDropDownLists(this,document.getElementById('ddl2'))">
+ 
+          <option value="0" >--Select--</option>
+          <option value="TamilNadu">TamilNadu</option>
+          <option value="AndraPradesh">AndraPradesh</option>
+          <option value="Kerala">Kerala</option>
+        </select>
+        <select id="ddl2">
+        </select>
+   
+      </div>
+  </div>
+      <div class="row g-3">
+        <div class="col-md-3">
+          <label for="inputdept" class="form-check-label">Department</label>
+          <select id="ddl3" class="form-select" onchange="configureDropDownLists2(this,document.getElementById('ddl3'))">
+            <option value="11">--Select--</option>
+            <option value="Civil">Civil</option>
+            <option value="Mech">Mech</option>
+            <option value="EEE">EEE</option>
+            <option value="ECE">ECE</option>
+            <option value="CSE">CSE</option>
+          </select>
+          <select id="ddl3"></select>
+        </div>
+      </div>
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary">submit</button>
+      </div>
+    </form>
+  </section>
